@@ -1,0 +1,26 @@
+{
+  "name": "kuzzle-snippet-testing",
+  "version": "1.0.0",
+  "description": "A simple testing framework. Programming language agnostic based on Standard Output interception and Docker containers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuzzleio/kuzzle-snippet-testing.git"
+  },
+  "keywords": [
+    "tests",
+    "kuzzle",
+    "snippet",
+    "multi-language",
+    "docker"
+  ],
+  "author": "Kuzzle Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kuzzleio/kuzzle-snippet-testing/issues"
+  },
+  "homepage": "https://github.com/kuzzleio/kuzzle-snippet-testing#readme"
+}
