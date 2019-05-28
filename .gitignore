@@ -2,24 +2,13 @@
 node_modules
 npm-debug.log*
 .node_history
-.reify-cache
 
 # Exclude coverage report
 coverage
 .nyc_output
 
-# Plugin config folder
-config/plugins/
-dump
-
 # IDE
 .idea
-
-# Docker
-docker-compose-custom.yml
-
-# vagrant
-/.vagrant
 
 # Other
 .DS_STORE
@@ -31,9 +20,6 @@ docker-compose-custom.yml
 # Kuzzle
 .kuzzlerc
 /*.log
-
-#swagger
-kuzzle-swagger.*
 
 #sonarqube
 .sonar
