@@ -10,4 +10,6 @@ const
 
   await suite.lint();
   await suite.run();
+
+  process.exit(0);
 })();
