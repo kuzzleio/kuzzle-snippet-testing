@@ -12,6 +12,19 @@ This tool is meant to be used with [docker](https://www.docker.com).
 
 This container (tests), templates the snippets and orchestrate the runner(s) to test them.
 
+Once the stack is ready (cf below), you can launch the tests by running
+
+```shell
+docker-compose run tests [snippet/path/glob]
+```
+
+:warning: if using some wildcards in the glob expression relative to the project root, you need to escape them with single quotes to avoid your shell to expand it:
+`docker-compose run tests 'doc/**/my-controller/**.test.yml'`
+
+You can also give a directory: `docker-compose run tests doc/0/my-controller`.
+
+If no glob pattern/directory is provided, the tool will scan the one set in `CONFIG_FILE`.
+
 ### Docker compose stack
 
 example:
