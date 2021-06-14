@@ -104,6 +104,7 @@ runners:
 - `path`: A [glob](https://www.npmjs.com/package/glob) pattern relative to the `mount` directory to match the snippets definition files.
 - `templates`: The directory where the snippets templates are located.
 - `dest` (optional): The default location to store templated snippets.
+- `protocols` (optional): A list of default protocols to tests for each snippets, if not present it is defaulted to `websocket` only, can be override per snippet config.
 
 #### runners
 
@@ -126,6 +127,7 @@ runners:
 
 - `snippet.dir`: the snippets directory
 - `snippet.source`: the rendered snippet file with its extension (i.e. `mySnippet.js`)
-- `snippet.name`: the rendered snippet file without its extension (i.e. `mySnippet`) 
+- `snippet.name`: the rendered snippet file without its extension (i.e. `mySnippet`)
+- `snippet.protocol` the protocol that should execute the snippet
 
 
