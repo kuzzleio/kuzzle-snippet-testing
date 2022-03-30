@@ -110,8 +110,11 @@ runners:
 
 - `default`: which runner to use by default if not found in the `.test.yml` definition file.
 - `<runner>`:
+  - `debugStdout`: boolean telling to show what commands do write on stdout
+  - `debugStderr`: boolean telling to show what commands do write on stderr
   - `service`: the docker service name as defined in the `docker-compose.yml` file
   - `path`: the path where to render and find the snippets. Overrides `snippets.dest` if set.
+  - `afterInit`: command to execute after initialization is finished (executed only once)
   - `lint`:
     - `global`: if set to `true`, will run the lint command once only. Useful if all snippets can be lint at once.
     - `cmd`: the command to execute.
